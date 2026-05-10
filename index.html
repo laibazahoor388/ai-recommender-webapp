@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Recommender System</title>
+</head>
+
+<body style="font-family:Arial; text-align:center;">
+
+  <h1>🤖 Graph-Based Recommender System</h1>
+
+  <p>Welcome to AI Recommendation Web App</p>
+
+  <input type="text" id="user" placeholder="Enter name">
+  <button onclick="recommend()">Get Recommendation</button>
+
+  <h3 id="output"></h3>
+
+  <script>
+    function recommend() {
+      let name = document.getElementById("user").value;
+
+      let items = ["Movie A", "Movie B", "Movie C", "Movie D"];
+
+      document.getElementById("output").innerHTML =
+        "Hello " + name + " 👉 Recommended: " + items.join(", ");
+    }
+  </script>
+
+</body>
+</html>
